@@ -1,0 +1,13 @@
+#ifndef PROGRESSBAR_H
+#define PROGRESSBAR_H
+#include<QProgressBar>
+
+class progressbar:public QProgressBar
+{Q_OBJECT
+int a;
+public:
+progressbar(QWidget* parent=0);
+public slots:
+void changeval();
+};
+#endif

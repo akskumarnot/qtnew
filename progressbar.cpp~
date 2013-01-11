@@ -1,0 +1,16 @@
+#include"progressbar.h"
+#include<QProgressBar>
+
+progressbar::progressbar(QWidget* parent):QProgressBar(parent)
+{
+setValue(0);
+setFormat();
+setOrientation(Qt::Vertical);
+a=0;
+}
+
+void progressbar::changeval()
+{
+a=value();a+=5;
+setValue(a);
+}
